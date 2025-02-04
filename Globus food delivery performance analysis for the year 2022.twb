@@ -1,0 +1,2871 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Globusfooddeliveryperformanceanalysisfortheyear2022' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='food delivery' inline='true' name='federated.0au36pk0q3av051b0yan81nxsx9f' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='food delivery' name='textscan.00op2tx0fmdrui15aby6n0vuekpy'>
+            <connection class='textscan' directory='C:/Users/admin/OneDrive/Desktop' filename='food delivery.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.00op2tx0fmdrui15aby6n0vuekpy' name='food delivery.csv' table='[food delivery#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Delivery person ID' ordinal='0' />
+            <column datatype='string' name='Age group(Delivery person)' ordinal='1' />
+            <column datatype='real' name='Delivery person rating' ordinal='2' />
+            <column datatype='real' name='Rseturant latitude' ordinal='3' />
+            <column datatype='real' name='Resturant longitude' ordinal='4' />
+            <column datatype='real' name='Delivery location latitude' ordinal='5' />
+            <column datatype='real' name='Delivery location longitude' ordinal='6' />
+            <column datatype='string' name='Type of order' ordinal='7' />
+            <column datatype='string' name='Type of vechicle' ordinal='8' />
+            <column datatype='real' name='Temperature' ordinal='9' />
+            <column datatype='integer' name='Humidity' ordinal='10' />
+            <column datatype='integer' name='Precipitation' ordinal='11' />
+            <column datatype='string' name='Weather description' ordinal='12' />
+            <column datatype='string' name='Traffic level' ordinal='13' />
+            <column datatype='real' name='Distance(km)' ordinal='14' />
+            <column datatype='real' name='Target(mins)' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delivery person ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Delivery person ID]</local-name>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias>Delivery person ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age group(Delivery person)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Age group(Delivery person)]</local-name>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias>Age group(Delivery person)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delivery person rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Delivery person rating]</local-name>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias>Delivery person rating</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rseturant latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rseturant latitude]</local-name>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias>Rseturant latitude</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Resturant longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Resturant longitude]</local-name>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias>Resturant longitude</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delivery location latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Delivery location latitude]</local-name>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias>Delivery location latitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delivery location longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Delivery location longitude]</local-name>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias>Delivery location longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type of order</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type of order]</local-name>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias>Type of order</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type of vechicle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type of vechicle]</local-name>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias>Type of vechicle</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Temperature</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Temperature]</local-name>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias>Temperature</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Humidity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Humidity]</local-name>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias>Humidity</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Precipitation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Precipitation]</local-name>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias>Precipitation</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weather description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weather description]</local-name>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias>Weather description</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Traffic level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Traffic level]</local-name>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias>Traffic level</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Distance(km)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Distance(km)]</local-name>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias>Distance(km)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target(mins)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Target(mins)]</local-name>
+            <parent-name>[food delivery.csv]</parent-name>
+            <remote-alias>Target(mins)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Age group(Delivery person)]' role='dimension' type='nominal' />
+      <column caption='AVG delivery time' datatype='real' name='[Calculation_21955091444977665]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Target(mins)])' />
+      </column>
+      <column caption='AVG delivery time by traffic level' datatype='real' name='[Calculation_21955091447848963]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED[Traffic level]: AVG([Target(mins)])}' />
+      </column>
+      <column caption='Average rating per rider' datatype='real' name='[Calculation_21955091450380292]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED[Delivery person ID]: AVG([Delivery person rating])}' />
+      </column>
+      <column caption='AVG delivery time by delivery person' datatype='real' name='[Calculation_21955091452919814]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED [Delivery person ID]:AVG([Target(mins)])}' />
+      </column>
+      <column caption='Total no of delivery person' datatype='integer' name='[Calculation_21955091456880647]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Delivery person ID])' />
+      </column>
+      <column aggregation='Avg' datatype='real' name='[Delivery location latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Delivery location longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='string' name='[Delivery person ID]' role='dimension' type='nominal' />
+      <column datatype='real' name='[Distance(km)]' role='measure' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Resturant longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Rseturant latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column datatype='real' name='[Target(mins)]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Traffic level]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Type of order]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Type of vechicle]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Weather description]' role='dimension' type='nominal' />
+      <column caption='food delivery.csv' datatype='table' name='[__tableau_internal_object_id__].[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]' role='measure' type='quantitative' />
+      <column-instance column='[Target(mins)]' derivation='Avg' name='[avg:Target(mins):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Target(mins)]' derivation='Count' name='[cnt:Target(mins):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Age group(Delivery person)]' derivation='None' name='[none:Age group(Delivery person):nk]' pivot='key' type='nominal' />
+      <column-instance column='[Delivery person ID]' derivation='None' name='[none:Delivery person ID:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Traffic level]' derivation='None' name='[none:Traffic level:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Type of order]' derivation='None' name='[none:Type of order:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Type of vechicle]' derivation='None' name='[none:Type of vechicle:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Weather description]' derivation='None' name='[none:Weather description:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Distance(km)]' derivation='Sum' name='[sum:Distance(km):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Target(mins)]' derivation='Sum' name='[sum:Target(mins):qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Traffic level)' hidden='true' name='[Action (Traffic level)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Traffic level]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/admin/AppData/Local/Temp/TableauTemp/#TableauTemp_0iq5y7g1ezo71p13cx7uh1ezu3hd.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='02/04/2025 06:23:39 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Delivery person ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Delivery person ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delivery person ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>food delivery.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1288</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Age group(Delivery person)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Age group(Delivery person)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Age group(Delivery person)</remote-alias>
+              <ordinal>1</ordinal>
+              <family>food delivery.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Delivery person rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Delivery person rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delivery person rating</remote-alias>
+              <ordinal>2</ordinal>
+              <family>food delivery.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rseturant latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Rseturant latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rseturant latitude</remote-alias>
+              <ordinal>3</ordinal>
+              <family>food delivery.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>490</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Resturant longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Resturant longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Resturant longitude</remote-alias>
+              <ordinal>4</ordinal>
+              <family>food delivery.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>490</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Delivery location latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Delivery location latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delivery location latitude</remote-alias>
+              <ordinal>5</ordinal>
+              <family>food delivery.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2727</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Delivery location longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Delivery location longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delivery location longitude</remote-alias>
+              <ordinal>6</ordinal>
+              <family>food delivery.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2727</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type of order</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type of order]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type of order</remote-alias>
+              <ordinal>7</ordinal>
+              <family>food delivery.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type of vechicle</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type of vechicle]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type of vechicle</remote-alias>
+              <ordinal>8</ordinal>
+              <family>food delivery.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Temperature</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Temperature]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Temperature</remote-alias>
+              <ordinal>9</ordinal>
+              <family>food delivery.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1109</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Humidity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Humidity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Humidity</remote-alias>
+              <ordinal>10</ordinal>
+              <family>food delivery.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>75</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Precipitation</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Precipitation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Precipitation</remote-alias>
+              <ordinal>11</ordinal>
+              <family>food delivery.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weather description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Weather description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weather description</remote-alias>
+              <ordinal>12</ordinal>
+              <family>food delivery.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Traffic level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Traffic level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Traffic level</remote-alias>
+              <ordinal>13</ordinal>
+              <family>food delivery.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Distance(km)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Distance(km)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Distance(km)</remote-alias>
+              <ordinal>14</ordinal>
+              <family>food delivery.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1949</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Target(mins)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Target(mins)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Target(mins)</remote-alias>
+              <ordinal>15</ordinal>
+              <family>food delivery.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2704</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='100' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Distance(km):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0au36pk0q3av051b0yan81nxsx9f]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0au36pk0q3av051b0yan81nxsx9f].[cnt:Target(mins):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Age group(Delivery person):nk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of order:nk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Target(mins):qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Type of vechicle:nk]' type='palette'>
+            <map to='#b71d3e'>
+              <bucket>&quot;scooter&quot;</bucket>
+            </map>
+            <map to='#dc5447'>
+              <bucket>&quot;motorcycle&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;bicycle&quot;</bucket>
+            </map>
+            <map to='#f7894b'>
+              <bucket>&quot;electric_scooter&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Age group(Delivery person):nk]' type='palette'>
+            <map to='#9e3d22'>
+              <bucket>&quot;21-30&quot;</bucket>
+            </map>
+            <map to='#ca5422'>
+              <bucket>&quot;31-40&quot;</bucket>
+            </map>
+            <map to='#f5a645'>
+              <bucket>&quot;15-20&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Type of order:nk]' type='palette'>
+            <map to='#9e3d22'>
+              <bucket>&quot;Drinks&quot;</bucket>
+            </map>
+            <map to='#ca5422'>
+              <bucket>&quot;Snack&quot;</bucket>
+            </map>
+            <map to='#ee7422'>
+              <bucket>&quot;Meal&quot;</bucket>
+            </map>
+            <map to='#f5a645'>
+              <bucket>&quot;Buffet&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Traffic level:nk]' type='palette'>
+            <map to='#9e3d22'>
+              <bucket>&quot;Very High&quot;</bucket>
+            </map>
+            <map to='#ca5422'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#ee7422'>
+              <bucket>&quot;Moderate&quot;</bucket>
+            </map>
+            <map to='#f5a645'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+            <map to='#ffc685'>
+              <bucket>&quot;Very Low&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Weather description:nk]' type='palette'>
+            <map to='#9e3d22'>
+              <bucket>&quot;scattered clouds&quot;</bucket>
+            </map>
+            <map to='#ca5422'>
+              <bucket>&quot;smoke&quot;</bucket>
+            </map>
+            <map to='#db5e20'>
+              <bucket>&quot;mist&quot;</bucket>
+            </map>
+            <map to='#ee7422'>
+              <bucket>&quot;clear sky&quot;</bucket>
+            </map>
+            <map to='#f5a645'>
+              <bucket>&quot;broken clouds&quot;</bucket>
+            </map>
+            <map to='#ffc685'>
+              <bucket>&quot;haze&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Delivery person ID:nk]' type='palette'>
+            <map to='#9e3d22'>
+              <bucket>&quot;CHENRES14DEL02&quot;</bucket>
+            </map>
+            <map to='#b84b23'>
+              <bucket>&quot;CHENRES01DEL02&quot;</bucket>
+            </map>
+            <map to='#ca5422'>
+              <bucket>&quot;JAPRES12DEL02&quot;</bucket>
+            </map>
+            <map to='#e96b20'>
+              <bucket>&quot;COIMBRES12DEL02&quot;</bucket>
+            </map>
+            <map to='#ee7422'>
+              <bucket>&quot;COIMBRES03DEL02&quot;</bucket>
+            </map>
+            <map to='#f59c3c'>
+              <bucket>&quot;SURRES16DEL01&quot;</bucket>
+            </map>
+            <map to='#f5a645'>
+              <bucket>&quot;COIMBRES06DEL01&quot;</bucket>
+            </map>
+            <map to='#ffc685'>
+              <bucket>&quot;RANCHIRES18DEL01&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Delivery person ID' />
+        <field-sort-custom-order field='Age group(Delivery person)' />
+        <field-sort-custom-order field='Delivery person rating' />
+        <field-sort-custom-order field='Rseturant latitude' />
+        <field-sort-custom-order field='Resturant longitude' />
+        <field-sort-custom-order field='Delivery location latitude' />
+        <field-sort-custom-order field='Delivery location longitude' />
+        <field-sort-custom-order field='Type of order' />
+        <field-sort-custom-order field='Type of vechicle' />
+        <field-sort-custom-order field='Temperature' />
+        <field-sort-custom-order field='Humidity' />
+        <field-sort-custom-order field='Precipitation' />
+        <field-sort-custom-order field='Weather description' />
+        <field-sort-custom-order field='Traffic level' />
+        <field-sort-custom-order field='Distance(km)' />
+        <field-sort-custom-order field='Target(mins)' />
+        <field-sort-custom-order field='Calculation_21955091439464448' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='food delivery.csv' id='food delivery.csv_11D58852F6DF4C7680FCF5534D59A73C'>
+            <properties context=''>
+              <relation connection='textscan.00op2tx0fmdrui15aby6n0vuekpy' name='food delivery.csv' table='[food delivery#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Delivery person ID' ordinal='0' />
+                  <column datatype='string' name='Age group(Delivery person)' ordinal='1' />
+                  <column datatype='real' name='Delivery person rating' ordinal='2' />
+                  <column datatype='real' name='Rseturant latitude' ordinal='3' />
+                  <column datatype='real' name='Resturant longitude' ordinal='4' />
+                  <column datatype='real' name='Delivery location latitude' ordinal='5' />
+                  <column datatype='real' name='Delivery location longitude' ordinal='6' />
+                  <column datatype='string' name='Type of order' ordinal='7' />
+                  <column datatype='string' name='Type of vechicle' ordinal='8' />
+                  <column datatype='real' name='Temperature' ordinal='9' />
+                  <column datatype='integer' name='Humidity' ordinal='10' />
+                  <column datatype='integer' name='Precipitation' ordinal='11' />
+                  <column datatype='string' name='Weather description' ordinal='12' />
+                  <column datatype='string' name='Traffic level' ordinal='13' />
+                  <column datatype='real' name='Distance(km)' ordinal='14' />
+                  <column datatype='real' name='Target(mins)' ordinal='15' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_EF5EDDB8044344E5991A3FFBDAC29EC6]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Impact of traffic level on avg. delivery time(mins)' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Avg. delivery time(mins) across delivery person age group'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#1b1b1b' fontsize='8'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food delivery' name='federated.0au36pk0q3av051b0yan81nxsx9f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0au36pk0q3av051b0yan81nxsx9f'>
+            <column datatype='string' name='[Age group(Delivery person)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Delivery person ID]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Target(mins)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Traffic level]' role='dimension' type='nominal' />
+            <column-instance column='[Target(mins)]' derivation='Avg' name='[avg:Target(mins):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Age group(Delivery person)]' derivation='None' name='[none:Age group(Delivery person):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Delivery person ID]' derivation='None' name='[none:Delivery person ID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Target(mins)]' derivation='Sum' name='[sum:Target(mins):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0au36pk0q3av051b0yan81nxsx9f].[Action (Traffic level)]'>
+            <groupfilter function='level-members' level='[Traffic level]' user:ui-action-filter='[Action1_EF5EDDB8044344E5991A3FFBDAC29EC6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Delivery person ID:nk]'>
+            <groupfilter count='6' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Target(mins)])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Delivery person ID:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Target(mins):qk]' included-values='in-range' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Age group(Delivery person):nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Target(mins):qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Delivery person ID:nk]</column>
+            <column>[federated.0au36pk0q3av051b0yan81nxsx9f].[Action (Traffic level)]</column>
+            <column>[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Target(mins):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Target(mins):qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Target(mins):qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='size-bar' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Age group(Delivery person):nk]' />
+              <size column='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' />
+              <lod column='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Age group(Delivery person):nk]' />
+              <text column='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Age group(Delivery person):nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{AAB8FFF3-79F8-431C-8936-ED8614C47CBC}' />
+    </worksheet>
+    <worksheet name='Avg. delivery time(mins) across different order type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#1b1b1b' fontsize='8'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food delivery' name='federated.0au36pk0q3av051b0yan81nxsx9f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0au36pk0q3av051b0yan81nxsx9f'>
+            <column datatype='real' name='[Target(mins)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Traffic level]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type of order]' role='dimension' type='nominal' />
+            <column-instance column='[Target(mins)]' derivation='Avg' name='[avg:Target(mins):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Type of order]' derivation='None' name='[none:Type of order:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Target(mins)]' derivation='Sum' name='[sum:Target(mins):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0au36pk0q3av051b0yan81nxsx9f].[Action (Traffic level)]'>
+            <groupfilter function='level-members' level='[Traffic level]' user:ui-action-filter='[Action1_EF5EDDB8044344E5991A3FFBDAC29EC6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of order:nk]'>
+            <groupfilter function='level-members' level='[none:Type of order:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of order:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Target(mins):qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0au36pk0q3av051b0yan81nxsx9f].[Action (Traffic level)]</column>
+            <column>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of order:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Target(mins):qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of order:nk]' value='Type of order'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='8'>Type of order</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of order:nk]' />
+              <text column='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of order:nk]</rows>
+        <cols>[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Target(mins):qk]</cols>
+      </table>
+      <simple-id uuid='{67D1C969-DAC1-4EF7-911E-5BBF5AAB54CD}' />
+    </worksheet>
+    <worksheet name='Impact of distance on avg.delivery time(mins) by vehicle type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#1b1b1b' fontsize='8'>Æ </run>
+            <run bold='true' fontalignment='1' fontcolor='#1b1b1b' fontsize='8'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food delivery' name='federated.0au36pk0q3av051b0yan81nxsx9f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0au36pk0q3av051b0yan81nxsx9f'>
+            <column datatype='real' name='[Distance(km)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Target(mins)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Traffic level]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type of vechicle]' role='dimension' type='nominal' />
+            <column-instance column='[Target(mins)]' derivation='Avg' name='[avg:Target(mins):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Type of vechicle]' derivation='None' name='[none:Type of vechicle:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Distance(km)]' derivation='Sum' name='[sum:Distance(km):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Target(mins)]' derivation='Sum' name='[sum:Target(mins):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0au36pk0q3av051b0yan81nxsx9f].[Action (Traffic level)]'>
+            <groupfilter function='level-members' level='[Traffic level]' user:ui-action-filter='[Action1_EF5EDDB8044344E5991A3FFBDAC29EC6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of vechicle:nk]'>
+            <groupfilter function='level-members' level='[none:Type of vechicle:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0au36pk0q3av051b0yan81nxsx9f].[Action (Traffic level)]</column>
+            <column>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of vechicle:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' value='#f28e2b' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' value='0' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Target(mins):qk]' palette='orange_10_0' type='interpolated' />
+            <encoding attr='color' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' palette='orange_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='5' />
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-color' value='#f28e2b' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' value='#f28e2b4b' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#f28e2b' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of vechicle:nk]' value='Type of vechicle'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='8'>Type of vechicle</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' />
+              <text column='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of vechicle:nk]' />
+              <lod column='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of vechicle:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#f28e2b67' />
+                <format attr='line-pattern-only' value='solid' />
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Distance(km):qk]</rows>
+        <cols>[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Target(mins):qk]</cols>
+      </table>
+      <simple-id uuid='{9597973B-966F-4BA2-B9C1-550033DD0663}' />
+    </worksheet>
+    <worksheet name='Impact of traffic level on avg. delivery time(mins)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#1b1b1b' fontsize='8'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food delivery' name='federated.0au36pk0q3av051b0yan81nxsx9f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0au36pk0q3av051b0yan81nxsx9f'>
+            <column datatype='real' name='[Target(mins)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Traffic level]' role='dimension' type='nominal' />
+            <column-instance column='[Target(mins)]' derivation='Avg' name='[avg:Target(mins):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Traffic level]' derivation='None' name='[none:Traffic level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Target(mins)]' derivation='Sum' name='[sum:Target(mins):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Target(mins):qk]' included-values='in-range' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Traffic level:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Target(mins):qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='background-color' value='#ffffff' />
+            <format attr='border-color' value='#c0c0c0' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Traffic level:nk]' />
+              <text column='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]</rows>
+        <cols>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Traffic level:nk]</cols>
+      </table>
+      <simple-id uuid='{7AB2CF5E-3123-4A1F-89F0-174605D50B33}' />
+    </worksheet>
+    <worksheet name='Impact of weather on avg. delivery time(mins)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='8'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food delivery' name='federated.0au36pk0q3av051b0yan81nxsx9f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0au36pk0q3av051b0yan81nxsx9f'>
+            <column datatype='real' name='[Target(mins)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Traffic level]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Weather description]' role='dimension' type='nominal' />
+            <column-instance column='[Target(mins)]' derivation='Avg' name='[avg:Target(mins):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weather description]' derivation='None' name='[none:Weather description:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0au36pk0q3av051b0yan81nxsx9f].[Action (Traffic level)]'>
+            <groupfilter function='level-members' level='[Traffic level]' user:ui-action-filter='[Action1_EF5EDDB8044344E5991A3FFBDAC29EC6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Weather description:nk]'>
+            <groupfilter count='6' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Target(mins)])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Weather description:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Weather description:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Weather description:nk]</column>
+            <column>[federated.0au36pk0q3av051b0yan81nxsx9f].[Action (Traffic level)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-color' value='#f1ce63' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='text-format' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Weather description:nk]' value='Weather description'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontsize='8'>Weather description</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Weather description:nk]' />
+              <text column='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Weather description:nk]</rows>
+        <cols>[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]</cols>
+      </table>
+      <simple-id uuid='{41AC7F35-0A5F-4CCF-9F1C-E4A37790C2E2}' />
+    </worksheet>
+    <worksheet name='KPI'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food delivery' name='federated.0au36pk0q3av051b0yan81nxsx9f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0au36pk0q3av051b0yan81nxsx9f'>
+            <column caption='AVG delivery time' datatype='real' name='[Calculation_21955091444977665]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([Target(mins)])' />
+            </column>
+            <column caption='AVG delivery time by traffic level' datatype='real' name='[Calculation_21955091447848963]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED[Traffic level]: AVG([Target(mins)])}' />
+            </column>
+            <column caption='AVG delivery time by delivery person' datatype='real' name='[Calculation_21955091452919814]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED [Delivery person ID]:AVG([Target(mins)])}' />
+            </column>
+            <column caption='Total no of delivery person' datatype='integer' name='[Calculation_21955091456880647]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Delivery person ID])' />
+            </column>
+            <column datatype='string' name='[Delivery person ID]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Target(mins)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Traffic level]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_21955091447848963]' derivation='Sum' name='[sum:Calculation_21955091447848963:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_21955091452919814]' derivation='Sum' name='[sum:Calculation_21955091452919814:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_21955091444977665]' derivation='User' name='[usr:Calculation_21955091444977665:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_21955091456880647]' derivation='User' name='[usr:Calculation_21955091456880647:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0au36pk0q3av051b0yan81nxsx9f].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Calculation_21955091452919814:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0au36pk0q3av051b0yan81nxsx9f].[usr:Calculation_21955091456880647:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Calculation_21955091447848963:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0au36pk0q3av051b0yan81nxsx9f].[usr:Calculation_21955091444977665:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0au36pk0q3av051b0yan81nxsx9f].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Calculation_21955091452919814:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0au36pk0q3av051b0yan81nxsx9f].[usr:Calculation_21955091456880647:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Calculation_21955091447848963:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0au36pk0q3av051b0yan81nxsx9f].[usr:Calculation_21955091444977665:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0au36pk0q3av051b0yan81nxsx9f].[Action (Traffic level)]'>
+            <groupfilter function='level-members' level='[Traffic level]' user:ui-action-filter='[Action1_EF5EDDB8044344E5991A3FFBDAC29EC6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0au36pk0q3av051b0yan81nxsx9f].[:Measure Names]</column>
+            <column>[federated.0au36pk0q3av051b0yan81nxsx9f].[Action (Traffic level)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Calculation_21955091452919814:qk]' value='n#,##0&quot;mins&quot;;-#,##0&quot;mins&quot;' />
+            <format attr='text-format' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Calculation_21955091447848963:qk]' value='n#,##0&quot;mins&quot;;-#,##0&quot;mins&quot;' />
+            <format attr='text-format' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[usr:Calculation_21955091444977665:qk]' value='n#,##0&quot;mins&quot;;-#,##0&quot;mins&quot;' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='subtotal' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[:Measure Names]' value='center' />
+            <format attr='vertical-align' data-class='subtotal' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[:Measure Names]' value='bottom' />
+            <format attr='text-align' data-class='total' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[:Measure Names]' value='left' />
+            <format attr='font-weight' data-class='total' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[:Measure Names]' value='bold' />
+            <format attr='font-weight' data-class='subtotal' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[:Measure Names]' value='bold' />
+            <format attr='border-width' data-class='subtotal' scope='cols' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='cols' value='none' />
+            <format attr='border-width' data-class='subtotal' scope='rows' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Calculation_21955091452919814:qk]' value='n#,##0;-#,##0' />
+            <format attr='color' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[:Measure Names]' value='#e15759' />
+            <format attr='font-size' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[:Measure Names]' value='8' />
+            <format attr='font-weight' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[:Measure Names]' value='bold' />
+            <format attr='text-align' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[:Measure Names]' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' scope='cols' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='cols' value='none' />
+            <format attr='border-width' data-class='subtotal' scope='rows' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#c0c0c0' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0au36pk0q3av051b0yan81nxsx9f].[Multiple Values]' />
+              <lod column='[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Calculation_21955091447848963:qk]' />
+              <lod column='[federated.0au36pk0q3av051b0yan81nxsx9f].[sum:Calculation_21955091452919814:qk]' />
+              <lod column='[federated.0au36pk0q3av051b0yan81nxsx9f].[usr:Calculation_21955091444977665:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'>&lt;</run>
+                <run bold='true' fontsize='12'>[federated.0au36pk0q3av051b0yan81nxsx9f].[Multiple Values]</run>
+                <run bold='true' fontsize='12'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0au36pk0q3av051b0yan81nxsx9f].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{63A50ACC-0A4F-4B84-974E-6CD731CD995F}' />
+    </worksheet>
+    <worksheet name='average delivery time by delivery person id'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#1b1b1b' fontsize='8'>Average delivery time(mins) by delivery person id</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='food delivery' name='federated.0au36pk0q3av051b0yan81nxsx9f' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0au36pk0q3av051b0yan81nxsx9f'>
+            <column datatype='string' name='[Age group(Delivery person)]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Delivery person ID]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Target(mins)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Traffic level]' role='dimension' type='nominal' />
+            <column-instance column='[Target(mins)]' derivation='Avg' name='[avg:Target(mins):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Delivery person ID]' derivation='None' name='[none:Delivery person ID:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0au36pk0q3av051b0yan81nxsx9f].[Action (Traffic level)]'>
+            <groupfilter function='level-members' level='[Traffic level]' user:ui-action-filter='[Action1_EF5EDDB8044344E5991A3FFBDAC29EC6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Delivery person ID:nk]'>
+            <groupfilter count='8' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Age group(Delivery person)])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Delivery person ID:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Delivery person ID:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Delivery person ID:nk]</column>
+            <column>[federated.0au36pk0q3av051b0yan81nxsx9f].[Action (Traffic level)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='0' />
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Delivery person ID:nk]' />
+              <text column='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]</rows>
+        <cols>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Delivery person ID:nk]</cols>
+      </table>
+      <simple-id uuid='{F6587E96-5D41-4D21-B22D-C03A29C07E27}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='food delivery' name='federated.0au36pk0q3av051b0yan81nxsx9f' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0au36pk0q3av051b0yan81nxsx9f'>
+        <column datatype='string' name='[Type of order]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Type of vechicle]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Weather description]' role='dimension' type='nominal' />
+        <column-instance column='[Type of order]' derivation='None' name='[none:Type of order:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Type of vechicle]' derivation='None' name='[none:Type of vechicle:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Weather description]' derivation='None' name='[none:Weather description:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='38631' id='4' name='Impact of distance on avg.delivery time(mins) by vehicle type' w='33167' x='34663' y='22983'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#e6e6e6' />
+          </zone-style>
+        </zone>
+        <zone h='38509' id='6' name='Impact of traffic level on avg. delivery time(mins)' w='29426' x='68579' y='23227'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#d4d4d47c' />
+          </zone-style>
+        </zone>
+        <zone h='38631' id='8' name='Impact of weather on avg. delivery time(mins)' w='23504' x='10661' y='22983'>
+          <zone-style>
+            <format attr='border-color' value='#1b1b1b' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#e6e6e6' />
+          </zone-style>
+        </zone>
+        <zone h='36430' id='10' name='Avg. delivery time(mins) across different order type' w='31983' x='10474' y='63081'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#e6e6e6' />
+          </zone-style>
+        </zone>
+        <zone h='36797' id='12' name='Avg. delivery time(mins) across delivery person age group' w='21883' x='42955' y='62836'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#e6e6e6' />
+          </zone-style>
+        </zone>
+        <zone h='36186' id='15' name='average delivery time by delivery person id' w='32731' x='65461' y='63203'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#e6e6e6' />
+          </zone-style>
+        </zone>
+        <zone h='100000' id='25' type-v2='text' w='9663' x='-187' y='-367'>
+          <zone-style>
+            <format attr='border-color' value='#e15759' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#a52519d6' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='8068' id='26' type-v2='text' w='64651' x='10723' y='611'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontsize='15'>GLOBUS FOOD DELIVERY PERFORMANCE ANALYSIS FOR THE YEAR 2022</run>
+          </formatted-text>
+        </zone>
+        <zone h='11858' id='28' name='KPI' show-title='false' w='87219' x='10661' y='9413' />
+        <zone h='17359' id='31' is-centered='0' is-scaled='1' param='C:/Users/admin/Downloads/fast-scooter-delivery-shipping-yellow-icon-free-png-7017516950359051i7xxnr5n0-removebg-preview.png' type-v2='bitmap' w='8791' x='312' y='3667' />
+        <zone forceUpdate='true' h='3667' id='32' type-v2='text' w='6671' x='873' y='34108'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#f1ce63' fontsize='8'>FILTER PAN</run>
+          </formatted-text>
+        </zone>
+        <zone h='8557' id='33' mode='dropdown' name='Impact of weather on avg. delivery time(mins)' param='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Weather description:nk]' type-v2='filter' values='database' w='9352' x='125' y='39731'>
+          <zone-style>
+            <format attr='border-color' value='#f1ce63' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#c0c0c0' />
+          </zone-style>
+        </zone>
+        <zone h='8924' id='34' mode='dropdown' name='Impact of distance on avg.delivery time(mins) by vehicle type' param='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of vechicle:nk]' type-v2='filter' values='database' w='9289' x='62' y='51345'>
+          <zone-style>
+            <format attr='border-color' value='#f1ce63' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#b4b4b4' />
+          </zone-style>
+        </zone>
+        <zone h='9046' id='35' mode='dropdown' name='Avg. delivery time(mins) across different order type' param='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of order:nk]' type-v2='filter' values='database' w='9476' x='0' y='62714'>
+          <zone-style>
+            <format attr='border-color' value='#f1ce63' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#b4b4b4' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2400' minheight='2400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='55' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98044' id='54' param='vert' type-v2='layout-flow' w='99002' x='499' y='978'>
+                <zone h='100000' id='25' type-v2='text' w='9663' x='-187' y='-367'>
+                  <zone-style>
+                    <format attr='border-color' value='#e15759' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#a52519d6' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='8068' id='26' type-v2='text' w='64651' x='10723' y='611'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontsize='15'>GLOBUS FOOD DELIVERY PERFORMANCE ANALYSIS FOR THE YEAR 2022</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='139' h='17359' id='31' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/admin/Downloads/fast-scooter-delivery-shipping-yellow-icon-free-png-7017516950359051i7xxnr5n0-removebg-preview.png' type-v2='bitmap' w='8791' x='312' y='3667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='95' h='11858' id='28' is-fixed='true' name='KPI' show-title='false' w='87219' x='10661' y='9413'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8557' id='33' mode='dropdown' name='Impact of weather on avg. delivery time(mins)' param='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Weather description:nk]' type-v2='filter' values='database' w='9352' x='125' y='39731'>
+                  <zone-style>
+                    <format attr='border-color' value='#f1ce63' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#c0c0c0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38631' id='8' is-fixed='true' name='Impact of weather on avg. delivery time(mins)' w='23504' x='10661' y='22983'>
+                  <zone-style>
+                    <format attr='border-color' value='#1b1b1b' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e6' />
+                  </zone-style>
+                </zone>
+                <zone h='8924' id='34' mode='dropdown' name='Impact of distance on avg.delivery time(mins) by vehicle type' param='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of vechicle:nk]' type-v2='filter' values='database' w='9289' x='62' y='51345'>
+                  <zone-style>
+                    <format attr='border-color' value='#f1ce63' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#b4b4b4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38631' id='4' is-fixed='true' name='Impact of distance on avg.delivery time(mins) by vehicle type' w='33167' x='34663' y='22983'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e6' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38509' id='6' is-fixed='true' name='Impact of traffic level on avg. delivery time(mins)' w='29426' x='68579' y='23227'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#d4d4d47c' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='3667' id='32' type-v2='text' w='6671' x='873' y='34108'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#f1ce63' fontsize='8'>FILTER PAN</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36797' id='12' is-fixed='true' name='Avg. delivery time(mins) across delivery person age group' w='21883' x='42955' y='62836'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e6' />
+                  </zone-style>
+                </zone>
+                <zone h='9046' id='35' mode='dropdown' name='Avg. delivery time(mins) across different order type' param='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of order:nk]' type-v2='filter' values='database' w='9476' x='0' y='62714'>
+                  <zone-style>
+                    <format attr='border-color' value='#f1ce63' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#b4b4b4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36430' id='10' is-fixed='true' name='Avg. delivery time(mins) across different order type' w='31983' x='10474' y='63081'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e6' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36186' id='15' is-fixed='true' name='average delivery time by delivery person id' w='32731' x='65461' y='63203'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e6' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{1BBC06DB-67AC-4E2B-85B5-7FDA84C0F149}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Impact of traffic level on avg. delivery time(mins)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Traffic level:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Traffic level:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{68DC56AF-82D8-4EC7-BECD-9E50EBE49C07}' />
+    </window>
+    <window class='worksheet' name='Impact of distance on avg.delivery time(mins) by vehicle type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0au36pk0q3av051b0yan81nxsx9f].[:Measure Names]</field>
+            <field>[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]</field>
+            <field>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of vechicle:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2FCF9CA4-9124-41D8-A89B-C398E45CECBD}' />
+    </window>
+    <window class='worksheet' name='Impact of weather on avg. delivery time(mins)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Weather description:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Weather description:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Weather description:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{60101A93-AD1B-4779-BCF6-60D6140429D7}' />
+    </window>
+    <window class='worksheet' name='Avg. delivery time(mins) across different order type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of order:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Type of order:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4D3452AA-7AD0-45CE-AE6C-1BAE48F6504E}' />
+    </window>
+    <window class='worksheet' name='Avg. delivery time(mins) across delivery person age group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Age group(Delivery person):nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Age group(Delivery person):nk]</field>
+            <field>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Delivery person ID:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0928306D-7DF5-469B-8694-9A09B75BB1C8}' />
+    </window>
+    <window class='worksheet' name='average delivery time by delivery person id'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Delivery person ID:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.0au36pk0q3av051b0yan81nxsx9f].[avg:Target(mins):qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Delivery person ID:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E8F0BD53-1558-4D40-B742-F3E320B4E843}' />
+    </window>
+    <window class='worksheet' name='KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{10975143-09EB-42C8-BC28-3F14FA5E75FE}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1' tab-color='#f66273'>
+      <viewpoints>
+        <viewpoint name='Avg. delivery time(mins) across delivery person age group'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Avg. delivery time(mins) across different order type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Impact of distance on avg.delivery time(mins) by vehicle type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Impact of traffic level on avg. delivery time(mins)'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0au36pk0q3av051b0yan81nxsx9f].[none:Traffic level:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Impact of weather on avg. delivery time(mins)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='average delivery time by delivery person id'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{ACC1814D-CAA1-4AAC-82ED-79C41433C926}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Avg. delivery time(mins) across delivery person age group' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Avg. delivery time(mins) across different order type' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAgAElEQVR4nOydd3hcx3Xof7ds77voHQRAgBR7UaMkkhIlS5ZsWXKTm2zHjlvkEtdYcRI7
+      thMnTp4TO3l2Xhw7duK4xk2yLFFiESlK7L0CRAcWC2zv5bb3x4KgKFISJRaAJn7fhw+7986d
+      mTt7z50zZ86cER658xaDGYa/spYbf/iT6a7GLFcB4nRXYJZZppNZAZjlqmZWAGa5qpkVgFmu
+      amYFYJarmlkBmOWq5ooTAENX+cX3/4V77rqD1933FjbtOkZy7ARf+uq/TaXR1QL/+rW/4PZ1
+      t/HQZ79IPFsEJc07Xn8na9eu5Z43vIn1zx0iHx3gU3/51cmrcnzuo19AMQwe++l3ufvO23nj
+      W9/J3hOjU/l+5ZPvZ82ataxdu5ZN+wcopCN8/uMf5LZ1d/Dlb3wXRTNg8vrX3nk7b3v3B+ke
+      jgDw1T99P2vWruVNb3uQZw+cxJgyPhd52123sHbtrbzvI59iaCIJGPzVQw+yZm25rP/z3f8l
+      1r+Lr3zrB1N12fHkL/iv3z/L9t//mB/+dgsAWjHFxz/5MLnxE9x8yy2sXbuWtbfdwaGhOP/z
+      ra+yes0a7rjrHr7708coJEP8ycc/R0k30JQcn//s58gpOgAbf/0DVq9ew+2veS3f/P4vMIwS
+      H3vH/VP1+f7/bqR3z3puuWU1t962js/81dfJljS6d/2eW25Zzdq1a3noz/8OwzD43U+/y913
+      3sHb3/MhTgyHAfjzj76TNWvW8vr738qGHYcB+PxH3s6ff/3fMQAMlY+/+36++H/K92uoOf74
+      gdfz7R8/Vr757AR33b6OrYcGAfjWl7/IWLaIoRX59te/yB23r+Mzf/0tCrEB1t26ptwOa9ey
+      szfy/AeJT77vzcgX9DSezg2TR8PqL5Eft6DmREC4OFm/gC2//h6/3BHkf/73EYRSikhaQykG
+      6e4ZnErz2H9/i0MpH4/+/nEe++E3+MLXvsO//sWDxDUfT276MWNHnuFP/vbb3Pj1j3LkRM/k
+      VRrHDh/HyIf5+/94lEd++xjFeJCsbpnKt3sgzI8ffZxaZ/nYVz/xbuqufxtP/MMavvbZD/Hd
+      X3Vw91yDb/zPFn72i0cIHd3Kn3z0kzz+qx/Qc2SMnzzxJMrgER548D386qnNVDlkQCeh+di4
+      8Vfs2vArHnz/R9n02x/Qc2SCX27ahH+y7PEjT9EzMDJVl0RkjJGSjXtvX8jffuY7PPj6W+jZ
+      9RSKqw69mMXTdROP/r+/mUr/eP8Af/GNH7KqzcGb73sDd9+9mbnuDP/z2Hbq07txd1yP3VR+
+      H0ZCw7z1E1/m/a9ZzDvfdB+vuWsto0GNRzdtwjmZ38GNP+K6u9/F3336Qf720x/g11sOMt+Y
+      YNW97+FvP/VeAAYObOSbP93KT37xW4KHn+bjH/ssj/7yewyMxfj5o0+iR47w9g9/ldW//zHB
+      eIpS8llypfdRDB4ibThI9Zbvt2//VnzzbmLjI7/kAw/chaQVyRnwf7/xDW78j2/Q391NQdX5
+      xf/7Okczfh557Ali4QmMUhxb02Ie+c9/Pus5ivXvJlex5MIFQDTrXPOBfhpWjSNKGmrRRN+j
+      DfT8rB6Miy8E6x/fzMc+/Q0mTuzmez//HavveiPLG88sZ/PmXXzoS9/BYjJx79vey3fe9gl0
+      HiQ2eoIvfP7zhEZH+OP3/+m5C7D5WNlk5o1veoA3PfAO3vPAG06f04o8veEp/DYTK25czY6e
+      EX7893cgm0Q+8MH38cl/eYqKkMGbH/wgPqcV37W3Eyh8g3hJm8qisWMxD9y2kGf3D/CGVe3P
+      K1jk2nVvpO7r3yasgGGk+MrDD2MF1tzzVhZ7zl1dV8087JlewnmNRx79Pfe99QtAlBO7NvPw
+      ww8jymY+/tkvAAZ7nttC8oRGTvLhskh84JMPc++b34vDG+CHP/rvM/JVVZVCsYCiGYiiQD4d
+      5EsPP4wJuOeB9+EEBnqO8MTjj7P3xChrPlAFI9B/4jDr16+nsq6V7i1buO/BD5Tb4vo78Ev/
+      TDitoCl5Nm94ktTQfioam5EAkFi1sIHnjg2T2vEkt955Jxu2DQDwu988yl1v/RyP/vNn6R3P
+      MNcO3oZ5rKhV2LCn9/Sz8eROHv6Pn2MxSdTW1VIIxek9sJ2HH34YgI/+2ZeodZsm8/w1t9/9
+      rgsVAIN57x6i+aZJNUEHk6nE3Pv6KaZMDP2++sKyPwcOu4V4Mk1XcytzqyU27zzI8sbFZ6Rx
+      2s0k0znATzGfQTCZEQC7p4q7X/c6gt17+e0jj3HbNQ+AIZTVEV1HEwUQTHz9uz9lpL+bb//j
+      V/iHvMjDfzwpBHqJg/v24rLIdC5bhUWQyCkqDrOZVDKF1e7A4RIYSCXKrWNoZDUFi3imgKbS
+      KRxO+1n3Zhg6GUXHKgJYueOee3ADDa31EAufsz0EUeLuNct4YvNOth+L8NHFzagjUaqa2rnn
+      nnsQRAmnRQQMjh/cyfc2buAXT2zCaQJ89dy3upNEwx24LNIZ+X7nbz7Hkz9q5K0ffpj2Kgcm
+      i4e77rkHK9BaV0E4AuMjg3ztS1/grZ/6R1bNq2ffCIRGBtmzZw/tJTMul4PBxGRb6CrFgoZZ
+      ljCUEs88+Rs27x1g05O/ndIV7rj7br736OMQGeX977qODdsGMPQij6x/mv6Cg8GhYX7z+BY+
+      c/8iAD7w0U/wx5//J6on9UmHTSKWytPqs03dR0V9C/fccw8Abqt0qqH59W8ep25UvzABEC0G
+      9TeFMAwQJu/CAHRNpGJh8pIIwFsefCfv/eRDPPSxD5NIpDjVJ08E+3j88cepamjjLe98Gx/9
+      7J/ysQ+/m/U//z533/8BBEDXVdKpFLquMzA4hNVXhynSw3f/+2cUR/bjmX8NQnKML37z+6xY
+      vgRBlLBaT6tAmFx89NOfnVKB3nHfrTz08c/xrnvX8O/f+gaf+LvvcW2DwN/d/x4aXArBI1up
+      WHQbTlkCSmxav57c4BE29sGnF9ROZZtLTvDEE79n9+ZHqL72btxSuSUzqRQA6XQWCzA60MPj
+      jz9OfevcM9rkrnvv5W0f/DzNS+/EKkIGUEslUqkUCCKFkgKIvOODn+ahN6/m4T/7PP/zg3/D
+      ZZVxezyoLtdZ7fzQX/4jH7nv5slvRQxDI5VKUQKy2RwA1619LQ8/uJZ3vucj3LRyIQA33HY3
+      n59UgdITTXz9ze+jwakQPLwV77w1+O0Sst3DF772LZZ/98v81d99m3/64scAqG5fRnj/V/DN
+      Xzeljo0e3YG7azVvuf9elDuu4x++9zs+NSkArpoObmgU+fZPuvkE8J73P8inP/IhPvbh95BM
+      5bl/7TxUZbIdgFyxhMNsJR08TM63kLe/8V6kt7c3f/EVPH9nYHJqdNw3hMBpd6LIiQqSAx5K
+      SRPhvd5Xla/N4aLxvjed85y/dg5rr1/Anl27sVV18I43vR6Py04iGmI0FEK0eFl92zpWdtWz
+      c/debnzt23n761YjCAJKNsnA8Ciq7Obzn/0EHpeLO++4jYN7dmIKzOHP/vSD2OxOTFqW/QcP
+      M++GO3n3/bcjTkq3yWSmc948zFL5x+laeiPV1hL7j57kXR/5DKsWt2N2+Lhr3U3s3rGdQOtS
+      PvexP0KWBExmne7uXhyVLXzpL/8Mh+X0u6eUiTMwOk7nynV86kNvRxTAZNLo7u4jFAph99bQ
+      0dpAZDxEKBTC6g7Q2d5CZU0DjdV+bJ5qtFyCe9/8VmoCbhAEEuFy2tD4BPMWLcfvttPUNpf5
+      C5fQ4hOZyIo01lYgSTI1Da3UVZzWsSRJprq+mdrA6WOGlqe3f4hQKISvpoWWhmq8gVrmzZvH
+      rauWsnP/CRZd04m3opaW+vKLz+LwceetN7J75w4q5izjMw+9F5MkYjKZ6Jq3gBU3riY/dhx7
+      VQuVPjedXQup8ttZvmoddZVeHB4/XrvEtatfw7VLF9Dc1oWFLG2d12CzOZk/t42FixaiYWHV
+      TdfT0r6AlfPr2bFrL3WtnXS1t5CKhgmOlduiY+FyfA4L4dAYi25cy6qVSxEuxBlOkAzWfGsP
+      Dl9uaswb3FtL7YoxshMONj+0/FXlO+sMN8vl4oLMoIYm0P3zFlRdxgAMBHRNAEEgEzxbx51l
+      lpnGBVuBRjdVkBp20nJ3CBENyapTTFs48ZOmi1G/WWa5pFyQAAiSgX9+GotXYWyrn8CCBGpO
+      4uh/tFCImC5WHWeZ5ZLxqgVAtOisePg4uiaCKiCadXZ+qeuS2P5nmeVSMSUAgmwg23V4/pBY
+      oPz9lIlTAzVbnuVte+MogqDjqCoiW1RiPT7s1UVyIevlrP8ss1wQkwJgsOzT3VQvjnBKAgxB
+      AAEE3ZgSBN0Q2fbni8kM2WlcPU4xYUIvCVgr8kiyCyV/kTwrzkEsFqO/v/+S5T/L1cnUEys7
+      igiCBgYoRRPP/tViZLvOqr/aB5SFQBJ0ZKuGo76AzZfH5skx+HQTrpo01YvCzLnXQfePGjC0
+      i68GKYpCJpO56PnOcnUzZQYVRWNqSjrW7SUzaMfVlAOh3CMIz0vnn58E3QADaq8NMfxcPQDt
+      rx3g2r84im9eGkE+9/SCAc/zhJxllunltM5yavAqQPRIeQZXycrs/sZC5r55AHddekoVcjXk
+      yx8FMNtKVC6IMrCpicabglR0Rqn4YpR83EZu3IaSlzny3TkUImZMbpWudw2hZCWO/2cTl8pj
+      dJZZzpepHmDqpSxA7IgbBIPQNh/5sAVXfeaMZ9XiKZ5KigDYPHkSPXae+cISRnfUopZM2Lx5
+      Ap0xapaGqb6+7BA1/70DNN08QvNtQWSHfnnucJZZXoKpHuD5DosNa8eZ/0c59v5DF633jCIY
+      BoJwppA8HwFQ0jKZQRv7/qkDs6uV6uuTVK2IkBl10XjrGBM7PTiq8+XhhKQhmXXU7JkeiJcT
+      QVUx5Mnb1065KwsgnefkuD5pMXux9JoKonTaS/BFy1aZepWcb9lXOi/RNmegawi6UW4rw0DQ
+      dAx58plR1fJ/6TzyeQmmBECffCELBrTcNkJm3Ilk1qi7buLMB14A9RzWHtFsIJp0dEVAScsE
+      t/hInrSRDVppvHmE6utjDD5Vi+f9KYpJC6X0pbEYWQZP4hjPkKl1I9oqMAUHULwubMEwxYYm
+      cvXVmCdCuI/1El+5GFO6ANkJZN0GCBTqahCKeTBUkGygKwiqgm51ImglVIcN347dZNuakUsC
+      mknAkE0IBhR9TiyRJIW6GhxH9yHaa8lXeUCQEZQCis+LOTSG+0Q/seULMWVLSJFBcFQhajr5
+      2hrEQhbUEobNjaAUENQSus2NoBZRvB4sY2MYZjuqXcaczKM4zUgFHUPWkUpQcpgxpwuUXFbM
+      qQyKN4Bmt7xsu10spGQE3659lOrnkKvxIGoS5pE+DF8dJbuIKJgxj/aT71gAShY5m6dUUYkp
+      MoHmCaDaLZgiE2CyYz+2F9FWQ3xRO9aRAezBDKm5dYiCBfvJY5S8HgxHgGLAjVQoImZSKBVV
+      SOkkYklBCVQg5fKoDjOWcAzN5cXQCoiGjIEGgvi8HkB83sjUgOhRD62vCyIJ2lk3mY9YznKB
+      XvbQUYoZC7lxC5mgnfSwg+CWSvSiyPjuChrXhNj9tfls/fwyEMBQL4X+b2ALRTA0Hd3ViL23
+      DwEReShIrrURuaQiFFI4+0YxRAHP3j2IRZ1irR8kGbFQwnnsKCBgjsbQrTYMLUuprhUpPYxh
+      spBc0IWoKhiigZRKYEvmEUoZdJMJq1lEyhfB5i7XRsni6olh6AqGyU7KYuDqD2EIAt49u5GK
+      OsUqL5qmIOXzuI4dAU3DEkuiOV0YhTjF5g5Mg6PoJgtJjx3XiT4MUcAQVcSSiuL1YMqLaEIG
+      w1mJPRNHtchYkTBMJqzhLInFHZegrc+N5qmg5PeQbanHu2cfuqBjiCKlajOm+ATO/iCFKh8A
+      tr6TCAhYx0IIogVxYJTYsnm4Tg6BVgJBJNNSj3m0D0tSAaOEb9d+DIsNzW5CLGQRixqWsWHQ
+      NEzZPOpEHPNgH5n5c7GNBtH8teR0sI9FEQaGELMpkG2oJg0t0HB6DKBpwqRDGyBAdtxOwy2h
+      KavNKcuNYUBoVwAdceqYAIiCjs2VJ9CeoPmWINe8o4flnzsGGIxurcRdn+aWf9yLrzNDZvAS
+      TZapJaRcAQwNcw6k+BjF6joK1V4cA8OY0lkMyYRQzCEYoLicaB4fmtmEIUnoDi9SYpxifROq
+      zUypogrN7ScztwPdKKDUNIBsQjNLyLkShiShejwobjeqw47icqHb3ahWE4bZimVigmJVLeQT
+      FJqaMWQLQj6DgIDqdKL4A+hmGUMU0Rx+pMgIheY2VItMsaoKzVNBpmMOupqhVFf2rZIyKTBZ
+      UFxOVI8f3WImtegaFI8XcyRafoNmS6h2G4rfhzENapUhySBKaJKOaEgUq/yYwxPYRsfRLWaM
+      SbXFkM0ofh+63YWYiqI5XBiyGdQCyFZUhxPVbkO3OZATcZDNqHYrpYpKdFnGkGSKtfXYhkbJ
+      zWnCEEWKlQGK9U1k53ZhiobJNdQAYIqG0ZweVIedUkUlhs1NqqvllDu0wdx3jlC1LIoolL06
+      NVVEkif1U8HA0AXQRfb8fSf5CTP1a6O0v2EYqy+PZNbOWBNA+Sp0BLZ9YRmpARtrv7UXmzeH
+      IQgc/uFcBh+rflEb0LncocfHxzl+/PjF/7XOB7WI53A3qUULMMRX2HOVcniO9ZNcNP/V6apa
+      Ec+BbpJLF4Kh4OgdJtsx55Xnc5UhpuM4RmOkO9sQMzEsaZ18XcVZ6c6xHsCg6vokVo/yEtlP
+      +kcIZZ+g2BEXtkARZ30eR0OOuhUTyGYVAxh6up5D325j/h8N0HrHEACaIrPls8vIjZ27J5hx
+      AjDLHyxnj0QFWPTHx7E6SueVgSHAtr9cxvgOH+OUdTv9gwIta0cRgNprwxz9QQujWytpfc0Q
+      ggGSSaVx3Tgnf9aAVhJnHehmmTbOqSBqyplyYVD2DTJeoOiUxwbCWa4PI09Xl32JAJOtRO0N
+      MVJ9drLjjqnr2+4e5tZ/282qrx2i8Y4wgjQ7PTzL5efsHsCA0WeqmHv3AIYA+YSN/t83kA3a
+      MXQBk6tE87ox/O0JwKCYtpDsO3P1V6LbQXLIjbcxCQY03T7GyMYKQrsraL6txMBT9SS6PeiK
+      gGRTqb0+QmBRggP/1IahXiW28FlmBOc0xlcvjWIAsZN+un/RRNvrR+h8Sx+iaJAZd3DyN03E
+      Tnhpv3sAs0PB5NRQUs/LShcY2lCD5z1JBMDbnMJRV2ToqWrCB/00rB5nyUeOIltU8kkrg0/W
+      U0iYaXn9OP2/rD1XlWaZ5ZJw1uvWUV/E3ZBBKZk48ZNmlj50nMr5ESRJQxB1XNVplnzgGJkR
+      G5HjfkRRwzMne1bGoe1+lKJpaq0wAhSiZrre3kfDDUFkiwKCgc2dp+tNvbgbs4T3+C7HPZ8f
+      hsHe557meP8osfERNjz1FJue3ka+pE4lyaZibHt2J7oBmlLgmac3snX7HjTdYGKkn/VPPEHf
+      yAQvptwdPHDgRc9dzehqiR3bnmbj09soKKfnoSZG+li/fj39oxPldEqB9Y/9llhGIZMI89ST
+      6zl4rBfjFXhbniUA1StjoBsEn6ui/uYJLI4CmiJz7Gcd7P/OfLIRBwI6XQ/0M7i+DgSoWxU5
+      K+NSwsS+b84nuLuGQ9+bS3bEQsPaMN6mJIYh0r+hib3fWkCkOwAYNN82glacOYPh8EgPoXia
+      0HgUm9PLzavX4JOz9Ayfvtfe3j76+k6iG3Bk1zb8LQsJiGkOnhxhy7O7Wb12Lbu2bSYVCbJl
+      6zM8/sSTHNi/lyc3bkXVDXTDoJQOs2Xbczz5xOOMxzMM9hxl/fr1DIyeOxDW1UD/0d3IgTbm
+      N3rYtrscOxRDZetz+1i9ZjW7tz2Nohkc3L2dfC5HuqCy9ektrLhxNaPH9xLPqy9dwPN4gQpk
+      4OtMgQDJPhetdwVBgNFnq+mbVE2KSZnrPncQq7dAKSWDIFB3QwhHXQ4QENAxXiBXjWvGMbsU
+      PHPK/vypIRdHv9sMhkCix8Haf44jyRrejgz50OWbtn8xlEKa7ftPsmBuI91jRSx2G8O9vQyN
+      p1jWeXq8s2jpCrp7yqH5wtEMy5b7MKRa9g2OIJhcWMxmHGaZZDKKIrtp9qvkbNXYSjuI5HT6
+      +vvpqHMRy8Paha3sONaHPT+KIFmRXul8wx8Q/uoGevYdJWsRSZxyu1FyYHFjMVuwWyVCwycJ
+      Fy1UuK0UCkXyCrjsFmoqnMTTRfz281uTflYPoKkyiUEPpZQJQwcMkKwap1zhZFu5SzIArSSS
+      GPCQHnUiyjqirCHIBqKsnePPQJ90fxAtGsKkT5NkmSxE4JIspHk1KMUSgYCX3r5+xsaCjI6M
+      4vRXMaexktGxMKGRIQqKSiadpqQoZLJZGhsqOHasl+MnTlLf1I6oJpkIT5BVwSqKWCwWJKn8
+      X5bEcttOYrPZkCUZA4Om9i6u6Whg997909cA04zTE2D5ihV47SZaWluIh8dIKiakUoLxiXGy
+      RRAEEYfZYGQszMjICF6HzFBwnIGxFFVe28uWcYoXDYxlAPPeM0jbnYMYhsjw1loKMTMtdwQx
+      24pkwk62fGJpeYb4PKm9OcqyPzkCCEwcChA74aHh5nGc1RmUoonNn1hBKW6aMRNhxWySaEbF
+      adY50d2LxeVnfmcLT63fxLrb17B/zz5Kmo7J6mT54mvoPnYYw+Khq72ZfDrO4WM9tM9biE0o
+      kCiI2IQ8usWHkhzDVdXC+OgADTUBQskSNW4ToZSKSU0xMDJB14JFeJ3n/0P+IaEpBQ4eOIjV
+      U0lnewubn3yC61avg2KKI8dP0t51DX63A4BwcAirvw6rUOLQocNUNbTRUBM477JeMjKcyaVy
+      w1cO4apOnz5ogKbJ7Pr7BUQPul/RjQmSwfLPnaB60cTpxfYGGIgc/XEbA78tq1kzRQDOhaFr
+      FBUNq8U83VW5OjAM8oUiNtul8R97SZ9kJS2z/S8XMveBYaqXRhHNGsl+Fyd+2kyy2/GKCzM0
+      gb3/MJc597pouGUcs6tEZsxO3yONhJ59dXFELzeCKGG1TN86hqsOQbhkDz+cR1ygUlLm8L+1
+      ckRqQTQZqAXxghYy6iWRkz+v5+T/1iFZDLT87MTXLNPHea9KMTQBTRMu3ipeXUDLz4xB7yxX
+      L5cukM9Fxu12M3fu3JdPOMssr4ArRgBsNhs229VpFZnl0jGrgM9yVXPF9AC5XI54PD7d1bjq
+      sNls+P1+stks0Wh0uqtz0bliBGDXrl3Y7bObblxugsEg9957L9u2bcPtfmXzPlcCV4wASJJE
+      Q0PDdFfjqiOZTALl9m9ubp7m2lx8ruoxQDIWoaicHfblXBiaQq5wfstEXylqqTDl9msYBplM
+      hnQ6/TJXnclLpc/EJohnis87YpBOnx1oOBIKkleuroh9F7RL5KXiXLtEDg0N4ff7p76Huney
+      fzhHZLSX8XCU4ESEUibFyb5enG4Ph/btAYubyGgfoXCMn/70xzS3z8dslNi1Zx8mk8C//Ou3
+      WbTyRiZGh4iFxxEEnVgyw7HDh/F4fRw9uI+CYvDTH/0XPofE7zYfwGK1oGaj9AejKPk0AwMj
+      VNZUcvLoQaIZlVQ0RM/JXgLVtRRSUXbtOYBoqBgWF6HgMGNDfYxFM1RVBhCAZDjI07//GTFL
+      ExO9h7C6K/jdb35FJBJDkiW0XJpMqcTBQ8dxWeHwsW4iqQIOIU9SNbH5l/9NSLPTd+wAoqHT
+      09tHPBJCsHnoO3oATbazY/tzVHlsHO/pJRqLkSlq7N+zG3SV3t5+HHYzew8cpSrgZPvebtpa
+      6qfaORwOM2fOHPr7+6msrHzZ3+7g7t04/T7SiSSqoqAaAsV8hmy+hCToROMp7HYb8WiE+MQw
+      J4YT1FT6UIp5kpk88ZGjPLblKPO75pBNJdiw6WlSyRger594Ikl8tJuhmIrLKpDM5JEEg3Qq
+      hWSykEsn0ZDIpOJIJguSKJJKxNCQyvmnM9hsVpRSgUg8hSxcQSrQC9FKBdKJMFFVIx/vwyrL
+      DKkiK6/rZMuOA/hMOZ763W+x+2u5967VHD1eR7XfxZbHf83c5dfx3PaDLFiygkq3le0b9oOa
+      Iq1aEQQNi8VKOKUQcMBTG7dRU1NLY20F3jGR4wd2MzE2AlYnPjO0rbgVITfBgYE0cq6boiow
+      r85Cf6REpZEjOXqYvZkMxv6DSJJEQapAKBxg4fxysKr1G7dwfVcHG3euR3BUMjD+DACRaJT8
+      vn2IkkQhFcFukdkweIKkqZY6YZC+EzK3vfYe3G4vnV1zefLwTvanUtS7RcQ5C9jwm18yUZII
+      9AzgsDkZProHe3MXg6NZij295PI5kskUbQEzu/ekyBtmTK5qcul9F/S7jAwOki3GUQ0ziTwY
+      ioKSi2AzmZm3ZAWHtm/BVdOExeXHL8SIpMtbsW7auBGrJCCaBWoaOzGKSdZveg5dzRNSMqSi
+      ESRvPQEtRMLmIRENs2HTVqqr/VRXVzE8kQHRxIIGOzuOhbBabdy5ah5bd/eiFTKoxTR2ZK59
+      3esxEjF2bFyPp6b5ylWBJLMVm9WC2+XC6/XidDrR1Dz7DnbjlRXGMyoeXwV2svSPhDDpKhPx
+      DI2NjezbvY+65mYcjvKgurXBj7l6LsloiuuWXIPV6aejzsrgRBqv24nDKjEykcTjcuJyOpnT
+      2szipSuorKlnUdccBIsHUzEMVjdejwe7w4lJhO5jR7A4vfgbuhg6cZQbb7mRYnyYeDrP3n17
+      0Q2DSp+LEwNjNLbNxWGWWbFsEU6nE6fTwdK2apI46Gibg7tuLl3N1axYuZzVq1fSH0zhMonU
+      1lVy7MhxnE4nLrcHh9OF3WYnUNtErdfBihUrEdGw2J3YbXbcTgdOhx2H04HH48XucBKob0bK
+      jDESjiNcjHeiKFFdXYXbF0AWyiqVgcDBfbvRdY2ComJg4PL4EdCmVsUZgM1ux0G4C/4AACAA
+      SURBVOf3IRj6ZFC28tmWzmsInzyManWjayp7du9GUxRUQ6S+vhZVVcuOlYaBqgt0dbaXvRYm
+      M7fYnVR4XKgG7NuzB8NQ8bcturB9gi8V5/IGfeaZZ2hra3vJ6w7u3se8FUuZsdvzaQV27NyH
+      aHOzcsk1rzqb4ZNHKFkqaWusOq/0B3Y+Q928lVS6Xnqx0UjPIbKWGjqbTqs6R44cYd26dWzY
+      sIH58+e/bFn5XA5REhFFCU03MHSNLU9v5PpVa7DKkM2XcLrdZJNxnB4f6WQCr9+PWiyQKSi4
+      HRZ0QcYsS6QScQzRhFkWEUWBVDZPhd9LLBbHajZRVA1sVjNms4mSoqMWs0gWB6VcCpPNhcNm
+      IZWIIVudCIaGCMhWK2ohRzZfxOn2Xrkq0LlYtGLpdFfhpZGsXHfDDRecTWP7KxOexdfedF7p
+      GjoWvprqnIHteabqUy+i19x599Qxi63sRWwOlKO0+QNl332z1YbfeuZMv9t75hrxysnzgclr
+      nu+PbJMAa9lF3W49HQHO7fXzQiSbY6oeV6wKNMssF4NZAbhICBcQo/5qZKa01x+UCjSdiKJI
+      OjiMYcwcO7ogCNir618+4TQgiiKadn5zMJeSWQG4iGz7zINoxcJ0V2MKyWrj9h88Od3VmNHM
+      qkCzXNX8QQqAphRJ5wqopRzZ/Pm5L4TDZwaiiobDvJQy83LnZxYGxw/uJ69qHNm/m32Hjk1u
+      bmJweP9Oduzci6LpHD+8n5MDo9Nd2cvKFasCFbJJRsYiVNXUkoyEkKwuzIJKIpPHY5foDSZp
+      8JsZSxh0zqlmPBzDX1FNNh5CtHrQCmkMyUqV38HYRJySqlFZWUlodIiiLiNqClZ7klAogtPj
+      RzRUPHYTadVEKhoikcwiiAaJZIa6xhYc0sxdKJ8OBzmw6xAVcxfRNm8B+57ZTFKZh1dWGBgc
+      57qbbyE2eJhwXmJ+g2u6q3tZuXJ7AMNA03VKuRS62UVdTQWFYpF8Jgmyjdq6OgJ+H7X1dURD
+      IQRJYmJiglxRpdZnIRTLkIyFGR2P09rags0iAzq5okZzYx0CEJ6I0tQ6h0wySi6bRVfyRMeD
+      2Px1VPg8gIGm6Wj6DO4LDJ1NW5/D6zIRS6SYGBkgWdQRdA0EEzesup7ewzs4ejKI0+tl+87t
+      013jy8oVKwCCKGE2iZQ0ESUbZ2w8QiGfRzaZMFttZOIRdMlKKjqOy+fH0A0qKipwudyIZgd+
+      pxWPvwKf00J//yCaLgAikqAxNDKGZJLxep0M9PVhsjpBVxgZC+Pw+IiHhsqOWJIJSdDIXyIv
+      0YuDwE2rV+MPVGARFYLjMSwWM+nwKAOhKL093WSKAotWLCcy1IPd4ZnuCl9WrlgVyGJ30dp6
+      qruedAmoPj2F75nfBcD8eeUftGLKa6D8vaOzcyrt83eOam5tP6Mcr+/UhTVTx+qrT1/hOcdM
+      44xCEPAHKvHftg6A5qozPTpbak/fy+233XrBxWlKgZN9g7g8fswUiaVz2Jw+UAu4bTJF0UmV
+      f+aoWVdsDzDLzCQZGaeki+UlrJk8HR0dFDJJMokYw+E0lT4XYuQoQiEx3VUFruAeYCbSeNvr
+      0ZSZow6JpssfvtFis+ERnKipCJooUigUQJSwuzygKWQKJVwV8xEkCWYnwv6w6Hr3x6a7CtOO
+      w1NJvhiCyhp8LhvBYIimpibUUgG7zUI6WwBmTlzVWQGY5RVj6BqH9u0iFE0jyyK6IbL82uvx
+      uWwgCFRUn97mqrGpvMG3xVT2vnS7nNNS5xdjVgAuIrH/+muMGaIC2VfeiW3h+blBv1JK+QyV
+      zV14fWESmTwur49cJlUWgCuMWQG4iOQPbMEozQxfIHPzq19w83JYHB5qLQV+8NhObl17C3aX
+      h4D3ygyZMmsFeqUYGiXl/Peg+oNFEMgmI+zbt4/B0fHprs2r5kUFoO5mH55mC/7FblyNNnz1
+      JkwumdY7AzhrzDTd5sfdYKZipYfAXAeBDivIAk23+qm7wY1klWh/QwWiJDDn3kosbplA18zv
+      IjOpBKlMjmKxQCwaI5tJkc0X0dQS0VgCQ80THE9QKBTQ1BKxePIV7Up4uRns3s9vHt1MPBzk
+      l7/97dTx8aGTPL11G8OhCJqS53vf/HfO3uvzpTGZzdhsNsymGbsI9WV5URVIlIXygmJZQBBB
+      FEBJqxSSKpkJhYrFwlQ6ySmRjygIk9+1koGrzU4+rOJtMJEbK+GeYwdFuUy39WrR6esboLG1
+      jcHRISo8doaSImajBLqK3+9mOFQkOpFElmsppGN4nTZCcYmGypk3g6oWMwQTKgG7GV9lHc31
+      pye9Dh87gtNTRTQWJzbSQ1t7xyvcslVgze13UV/lYzgUu9hVv2y8aA9QjJZIDhXR8hqaYmCp
+      sGC2i6jZ8oZ5Sq7s/6JkVRIDBSSriGFAZqTA+J40kmAwvi+N6DShpBRKeR29OHPflKdobmpi
+      dHQUk9WG2+nA5faUN7VDwG6zoqkqZrMJVdPJZVIksgXkmbG46SzGhwfI5XMcO3Gc4vO0tkQi
+      ic/jo/2axYRDQ4QjCQb6TzA6uf/uy2IYaIZAdmKA//zRz3HN9Nnwl+BFe4DwwXLksOTR8v9s
+      8Mzjo1snA9WOlK0e+cmXQORouSONHi6nixx5pR3rdCJQUgrU1tZhtciIZpmAScSwVyEJBhOx
+      JE1NTRRLOmqpQI1/HuPhON4Zav2ob19AfbvOkvnXkBwfIJdTOdozgNduYcmK6zl86BArVt6I
+      z2UjEY7irDy/zeUMrcTWLVvIFxTqa6sIR6LU+F2I4pU3pJy1Ap2BQGV13RlHbDKcaqbG+rIt
+      224DbOUQI81NM8uufTYigcoAEKCqvuWMM4uWLp/67D3Phx+gVMih6gJ1jS04bSaCI4MckySu
+      6bjyYofOCsAsrxiL08eta9cwePIEo+EoHdcspaby9CaHuVSM4XCK+oCTsXAcb0UNRimP22Em
+      rUhU+maOM9ysAFxE6r7ymxljERIusR+QiMrmZ3fR0tLA1u07ePPrXgOUZ4nHIklEXSUUidPe
+      3s7Jk73oSpFo3ERnZwdioh/BVQ3S9Ie7nxWAi4hgdVy8TQRnOqKJugo3/X0DLLpuzdThRDhI
+      rqCQTESpDATQMUAQMFksqIqKqhuIjmoE2c4rNDtdEmYF4CKiB3swjGnycBREpLrLuImgoWEP
+      1PPu229n5+G+qcO+6kZ81RCOhHHZLPT39lFV04BWyuF22ognUlQGvCDOEG/Qiptbka+/bbrr
+      cQZuW/HlE81ACt/5EEYpPz2Fmyw4vrzpMhYoMNRzhFRkFHOg5ayzlRXlhTft7adcJMqbXVcG
+      ZpbFTNZFK1mp6bwSJ+NxnD4fL7b8WysVyJQMPM4Xv0m1lCdbMvA4n6f/GTqxeBK/vxwL0iJd
+      uRMrVw2GgcVipqgJNAS8L59+hiID/OqXv6SlzktGqiAVDjJvTh0pzUaNS+DYwARVthLbjsao
+      dWg4a2pYsmgxh/fuZd6SpYwP9uKqaqLCDls2PolYu4AASSqa5hIfPYnJW4+TDPGijFkoYpTy
+      pHAh5iJYfTX07tlMoPN6yKVYvebSeC9eTPL5PFabbVLXNygUSlitLx11+XIy2Huc4HiMzmuu
+      oefIEbK5LCtuvg23RWR0oIdgJMfiRXPZv3c/vppGOlpe7bZTBpm8yrWLOvH4rkxHOJicCfZZ
+      BAZTIsrEMSR7Bc9s30Fv93EyhRKJYA950U7L3A5MgohdUnhq/ZPE8kUOHTrCps3bsFot7H52
+      K00dXWQn+jk8EObIoUMM9PcTj4XZcbCbztZaNm/egiQJRKJhxqI5uo8cxFdZQUfHHGLRmfnW
+      D4+P0d/fx9DQEBPRBMVCkUI2RX9/P/F4jN2795LOzRyVrb65nbaGCvqHJ7juhhuQZBNOs4iu
+      5DhwtBuv30dk4BCu+k5GertffUGCzIqlCwgGgyRSZ2+3dKUgAnTMnQOCjGFAW0cb9VWV2Nxe
+      xkeH0CUL/ooaooN92H0B/H4/be0dFNIpqqsrWbRsJVU+Fw3NjRw/0Ut1fQsOsYS/ohKny0km
+      W6DGY+XAsT66Fi6lub4Oj9NOcLAHu6+axoYGuk904/N52bxxIzuf3UwyP3PCjGRyBWq8NmRn
+      gFwqQTKZJJtJoelgdzmprq7BZZ85PUAhHedEfxCbzUomOoQt0IgogKYWMSQrRmKIk1GJsf4j
+      KNIFmEr1Etu37yCRjHP85ODFu4HLjAxQ37GY+o7TBzvq33BWwjnNZ44Tli1ZVP4wt3zhnPkr
+      mDN/RfnY8slzLOJcrHL5qfT5mNdZjsDQ/oLzHtvM6Q0EUUAQBERBnIpobLU7kbPjhKNZivkU
+      2XwJ90uMey4fBsNDw8iyjCzJnBwMsnTZMrLRUSKqk0qnidFEieamKgaDeUzyBRgBJROLl11L
+      NjaG7p15joDny7SYQSWzferhn+k0NTYhCALVgOFuBEAQwGJ1IssStRVuBGGmRIUTmLd42emv
+      LeWliaZAPQ6gufqWqVNz2i/QZKoqpEsaa9beytO7j1xYXtPI7DzAy/B8B6/nx7Q3mcrHJenq
+      bMI9O7by7DP7iY4Ns3DFqumuzqtm6tcb6evB39SOGg0i+GtJR0LU1da91LWzvADTzW/DUKdp
+      TfBlFsTlN64hrdnIxYJE43FovTKfFRnKO+tl8xmyg6NUSHkE3SCXu5LcmGcGptvfP91VuHwY
+      Bj2Hd1PR2M5YMATLymuQ1WKOodEQmiFS7XcQiiTwBqqnnOEyikzlDIoMJwPkoiOEswJiOkRF
+      zZU7oJnlMmHopHMlXnf/W9ANAav99AMtmW00N9ZzvLufUFSho72dk729aIU80biFrq4OxFg3
+      grsO5Ol1JTcMoywA0azOqmuXMDLQDxYZWRCwWmeCVePKwvp/75o+VwjZQvGhJy5PWbpGLB4n
+      MjZCQSuvC/B7y0KgKwWO9wzS0TmX4YFedMMABKx2B0qpVHaG87YiyBaYpqjaulIiumMjE1t/
+      VxaApubyQobGltapRO76VztDeBWjKQj69ESMMPTLaImSTEQGj9MfU5CKSczualrLBjJKxQKy
+      2UQoFKK+rob+vj6q6xrRimVnuNgpZ7hp2CRPSSeYePoR4vufxb/sFjo/9jezViA49aNZEc/r
+      N5l57g/PJxENMRiMMb+zlYP7D6GLIgsWL8NmEsmmovQH41zT1U46HsbqrsT8KuXm2MAYt952
+      O5SybNhzlJUL5gBgc/nodJ3e37e9fVI9mpwsrAxYL+j+Xg350BCh9b+gMDZI5erXMf/Pvoko
+      ySAIV7cAKKU8kVga1By+mmYysXGcvgr0QpZUXqHS76ZQKIJkwW6RGBsLEaiqYDwUpqrKX14o
+      b7eQz5dwOh0vX+BlQDNkmqts7DrUx7XLlvHsls2IooChldi1/ygrly6hVEiz+9kNdN3yAHWv
+      cjx60w3XMTY2BobBqmuXv/wFlxnDMEif2M/4U/8LgkD1ujfimrsIQThz3fJVLQADA8M0NjUR
+      C+dIhoPoZgcjg4NU+j2MD/VhqLUEo3kWz28nNjFCXpMxdJ3w+Cii2YySS1Lhc5IV3DhnyNJg
+      i2SwaeseFlx/K0YpheioxCIJlHJpxoOjbEvHmX/jHXS1n58H8IvR0t5Fy8Wp8kVFVxXiuzcT
+      fvoRbPWtNL7pg1iqG150X+KrWgAEQZia6NI1lbHRIG6Xg1A4SnWFD0XXqW9oRJZEnN5KxEyC
+      0VAYj9tNoVCgqTrAvhPDrFxe8zIlXS4MhodHqKqpIRKNEj45ypLrbiEbDRJRbAR8HkQMSrk4
+      xw4eQ466qblxwR9EeEA1myKy5VHie7fiXXIj7X/yZSSH+2U35JZLQ0HMwk8uUzXPD9HthGvv
+      u+TlNDfVE47G8VdWYzZbkaQgFpcPUStQUAy8TgeCVI56ZpIlsnmNpoZ61JKCrqnINgs+jxNp
+      hux6DgJdCxejGyAKAtCOIAgY/lqagKY77sQwDARBoPn+9wDCFb+EM/rs4yQPbENJJ6i46W46
+      P/vPCLLpvHeilzP9SehPXuJqvkIqa+HDl74Yk8VOXe3phTlVtad2VbfzQtVYlM00NJYtYyZb
+      eeSYjMdondPKTEIQRCThhceEsz5LM3hXy5fDMAwKQyeIbv4l+Ykx7G0Laf3Ql87S78+Hq1oF
+      ulA8vjMjoun1i0GdnrUBhnTlxuc8Xwxdo9i7j9TOxxEcfirvfCfmqlMOiq+uL5sVgItI6f5/
+      nO4q/EFiqEWUnh3kjz+HVDOXwBs+img/W79PjPZTdNdR7TrTRJ0cGwFvDZ5ylDOS8TgOjxdZ
+      vMrNoLNcWgxdY2xsnKraWtRiEYvFRK6g4LBbGRvtR3bV4HeYiUdjeAL+MwfjhgGlDEb/dk7u
+      fIa6a+/A/bo/BemF+r3Brme3kNXNdFU7KZoybNy5Dae/igoHBCeyGMlhotYGuurMjIxmqG2u
+      oUVU2br3+KwAXEwsg4+APj0RsHV7DUr1jdNS9osx1N+Lv6aOvv5BLJKAZCh4aspeB/l0nKNH
+      B6nw+fHYTGhqhqPdQ3icNurrapjY9zhCYoJU5UJs819LxtvAzm3PUV3fyvwzTLh5eo4P4/S5
+      yXitZEZOEM0bZEeCaJUOVq1axfA+aGpdQvj4NlatWcORw/s5dizBiptuRLbXWjHZZpYhzMyV
+      qc9ahx4BbXrGAIp/0YwTgJIh4HQ4EPQQuVwGVbJTbzWBoYNkZunya+k/upOMaicZi7PuGju2
+      VB9PPbMRof5mFF8XN1y3iiN7dtHbfRhDcDE2MvoCAbAzd14TiujA43bjdLaQSB3AE6jHa9V5
+      7rldzOuoZ8+h/TTWVGESRVxOF41zfOzY9iyy6ZabSFUue9GbmA4CPRunuwqzXAQ8Ngs9PT1Y
+      7B7MJhNuu8xYOE6DGMIlFjlwYDeBilpsoo7fb2Pbzs10LV5ByiyxZOEyQj0H2bXvEAGni6qG
+      Oo5291PXfLbVbcUNt5zxvWbNmqnPrZNLfddVnvZt62wvH1y75uYzVSDDMBjs66GkQVNrO1bT
+      y/cM6dg4R/vDXLd8wbkTGBonuvvo7OxguL8bb80cXDaZ8OggoruKwEUOLT4RClFRU3POyZ1k
+      LIzJ4cNueXnNb2IsRKC25kVjIE2MhaioPXc504WhaxzYt4toPM28axYw0N/P6ESMN7/hHorp
+      GLsPHaeki6xddR27t67H2bScrpaKl8/4VVJV30TVC475AB0fldUSa1vOjAwXuPNdlHIp7NUF
+      /A4zgSUrzji/urqei81ZT0IxOcbhcYPI+DiNDVUMBSNEY3HqWjpIjfYg++q5+drFbN3wBFnD
+      jpQbRfd3ER05SahgIhUJkY2HsQYasSpxVIuX/mMHOXb8JB1zKimNDbLp6AmqXFasFTme6TnO
+      vKU3Mre5+qLcUDadJJ3LYHcFyEZHsbgrUXIpVEPE47RQ0hOk0iK5RARNMOGxS6TyGlarg4a6
+      SkYG+9FEK6KmkE1GmQgnsDncSIKG32kiXpJJR8dJZwoIkkEqk6e+sQXHDLCrC6JEVSDA2FgU
+      Z6CaFS4TxrExACwuPyuXLODJZ3aRCg+jYCGXm74dLQVBOGsuQihlkFw+brphxYtcdZHKLmUw
+      zGXflTNeYIIgUFdbS6CqhrZ6L79/ej8Bh0xj2zxGTu5jJJzHIoGhFUnkQcrFcQSqmT+/C09l
+      FUee24guCITiJcyCwkgkw/JFnTh9VTgEjXgqTveJE8xfdgMuq0xwoA+Lpwq1mLtoNyebrLS0
+      tpFLxzAkC/V+G6LdR4XLQiqbp7t3kIDLRDiRo5jPki+qNDS1oip5wKCkiTQ31iEAsViS5jlz
+      KOSSFAsFdLVEIjxeDgTm82A2m9FVdcZsmmcYBjVNbbTVuQjFc+zde4hlSxeg6zqlXJwnt+zi
+      9ttuZe+BI2RTEfoHh6etrqqqomnaGX96tOesY5fi7/nlnNUDmF0BWusMTFKeyoAPi2Sw9+hR
+      bl37WsKDRylKVkTJSldrDRkc1HtNWG0mZLONuV1dtC1YikvWUMwuVix0cfB4P12dHciGjmyT
+      cbr8HDqwn8bGRla0ezh+6AD2i+hJZjaJDPb34vFVo5VyiBYnRr6XqCFR4fdRU1NLKJKm2ucE
+      2YLDZkIUwGq1AiIWEwyNjGG1WvHYTQz29WF3edGLaUbGo3grGkiGhtAMAQ8CsiSgTdPCjhdi
+      6CX27tyLKjpYXmHHUmjDJgv0He/G5bdgtVnYf/AIa26/i1ImTiw/s4yAetW5w+hcynKELd//
+      a+Ncg+BUPIrJ4UFQ8miSFYf18llmWns2Mv8TZ04qPfPMM7S1tV22OrxSJEnCufl902oFyi36
+      1EXP98iRI6xbt44NGzYwf/78i57/dPOirwC3b3LLHPPMWcA8yx8mwwN95AoKTS0NJFIljGKa
+      itoGzPLFMTGMDPShIFJVU0doqA8FE83VTgqmirMF4PQOJ8J0rFq7osks/lzZxj0NGPLMWJDz
+      ytEpqAatDRUEI3HGR4LUNLVetIcfoKQqIMiIShrdGsBvpEnm8gwED58Ki6KzfftOrr/+evr7
+      +qh0GORd7VT9//bO7Lmt87zDzzkAsRIbsRDc90UrZclyHVd24m0a23WcSZpm4s6k085kJjed
+      XjR/Ra9zn0w7kzSTuMlkccerHFmydlGkuIsLBBIESGLfl7P0ArJkyZIomxQJkOe5wgEOX7wA
+      zw/nW96lXr/TXUK21+4QrXYRQFWoVCo0NOjx+Jop5jKoqudrB7jdT2dXH6JQYmEhBA1WKoKK
+      URTw+1uqAshFV/H7fYRiWi2grSCo8s73CBMEqJnSjF8HAW+Tg/V0ia52PxlzBVEpUqwomL9u
+      wvJ9JOPrpPMlOnv7SEbDVNRGHHYzZl1jVQChjQS6BhOZtWUad3Cyu9doDv4KQd3ZJVFV0BHp
+      +vGOvud243T7cN6ecjrsDcD2Ns/zNLfy+XZfc8vdHeEGbk+Cvf42mpqaiMVi6EQRowG2Ujlb
+      Q6NeEAGamqqJHW63G6fLhcHqwqLdCACZQg01v3gUsbUVrlwboywrzE1e58LFUT6/F6mqwuLC
+      IqqqElyYZWklsqu+1hK1FMpSg1S4tXSLyHoMWSqzHAxSLEuEV25xa3mVcjFPKLxWE72B9aZG
+      BjucXBmdIBzNcfz4kTtLfCvzU1y4PEkyfJNIvgGPU1va/hxNAJugoKdSSFEqS8hyhfnFAF6v
+      l3JFYilwC6uuzEo0s9tuolcqnL1wHZ+/mWaPjTMfvku8oCBX8txcSeBzmFhdDJIvZPjozNnd
+      drdm0ASwCVarBZ0oshZexeZyoxNhfmGJ9jY/UqlANFXA0rDbqzAqweAyrqYmUskoqWQWWdVR
+      SYW5FUnT5LIRiURo6u6jkIhiNO58dbZapbaCQWoOA/4WN4KgoBNFYsk0PV3tpOIJUqk0QwcP
+      EY2ncNq3d9Xiq3NfZ5j76fBz7NgxAFraa6uKxW6jNygZHIR22497UXa/g3gVEaPx7k3S56mu
+      1ZlaWu4852++P+Jdo57Qb/z2InBxt/24B9HbsvlJNUjJ0r7j4lW/Ri0cjbtoQ6BtJOF9cbdd
+      0PiK1I0AbDYbk5O1243wi3VG9xKffyaHw8G1a9d22Zvtp24EMDIystsu7GuefvrJpinuFnqd
+      qfZ+tXTG2vNJY2+i9/zbD8hVaqsxnrnx3vCDQqHAuXPn9uQQQ2NzTCYTzz33HHNzc4yOjmI2
+      b18lEX1JtpCTnF96QaqUKVckdHo9RsNjRMapKqFgALu3DZvly+fnUnFkvRW7dfPWQlY5fc9x
+      PB7HbDbT29u7uR8ae45Lly4BUCwWOXLkCC6Xa5O/eHweOgeIr4f43R/f5dTfnkJvdiJUcuTT
+      CVIFhZHD/VwZneQbz38TfSXNufNX6Ovv5Z13/sDb//pTMusBJhfCHB3uZi4Qwut2Mnb5IsPP
+      fIvY8k36D44QuTVLU9sg/Z210lxCYz/y0DGFr62Hjo4Ojhw5TPDmGOuxNKtrcWxilg8/Okej
+      zUJ4Pc7M+BV6Dh5iei7I8JGjtHlsXB2fotdnZHRsgo2MxMzMHMcODxOan6IomAgFA0zNLeFz
+      f/nO80RQVXK5PJuGrEklIhuJO4ehUIjQShD5MbIcFVlCkhVCKyvIyoPfqZSJshSK3vNccHn5
+      S8F0pcwGS6HY5m/6CIqZOLFYlNBGkqWbM8QTCaZm5jf9O1mqID2iykV0LULlAS9XymV2Myaw
+      lF7n3dPnqv7LCuVymXKxQC5fuOOXqshEFq5z7WaEfC6LJCuPXgVqaWkBBExqmc6hg1x+7x02
+      TJ08/7eDXBufo3fQTMvwEc6cv8rBp54hvlEtwnRooIeppQhHh/uRTB7keID54BqDBw4xNz2B
+      o2OYo8eOY7fuTExKLhbk57/4Iz/5yT8R2chAOYtczpPMlnjmG6cw6iEdXWViYoKobKO1UcXs
+      9DM7eR2/100snqKrpYmVaJb4xhq9vT3cGJ9AZ3Xw3PEhgutFdPEpLq0Z6XZANhUjnkohGqxY
+      rE7k7AaCxUUiHOTYsQN8cvY8oqLQYLZQLqTJJKIUcxk8HX0sLixy+Ogx5iY+o6ft7wguzrK4
+      muBQr5+F5SRmi0gqkcbjMJMqi3isOlJlHU0mlVhe5fjxI6zOTzM5MYqjfZiyrDJx5TI9PjNq
+      ywjStUvIDXZEKU2moGLWKxjtPgrJMPkiGJUYa0Ibb754gtnx6ySLKk1mPcFkmpZGI9fHpnjh
+      1ZcJLCzR29PGjfF5Tjx/ijN/+DV9T59Cj4hOKZHPZyiWZQb7e6qVAY+ewOd8ciEjN66PU0jm
+      WY8sMRXMUU6GKeRLSKrK977/PfQCnDv9AQ16hWgxyuK0hMVifbQAnj5xElUp4Wo/SLfPhnDq
+      Rbp7ugFo7fg8/9XO37/ZCkBve7W6W++BEXoPfGHZstXNwO3Kif293dv4sR+PsWvX6WpzMLEY
+      Jbc6jc5kpZRXcFokKgoYgdFroxw7cYIPT59lfE2k3V+Npo/HYliNIu994nM51gAADDRJREFU
+      uoRJL+Nwuaq/qLKFVzsbeeePH/LSa9/BJLgZsLeyMXueSiHPQL+fpVwTsZt/ZSUC7d3toEoI
+      +Sh6Vyfp4BjkUhSLBXL5HC8e6+HM7CpSPk82X6zemlWVVDLFzclJEukY3339Df78u9/w3Kuv
+      c/Gz8zjEChHVg1yUMWIgmykiKTA6Nc/J4V4WYzkKgoPevj467CpCq5+Lp9/F19JJPrHOS688
+      x5/+fJHWzjJyOYdDL2Byexjw9SPKJZZCMXxmiStzab75+kuMfnaNrjYfVy9cxOVrYn5uBsns
+      x2u34PO30j84yNn3/ozeZEMq5RlqcfD7v7zHQF8fy6EIPueTmsOp3FoN4/M4mInA+o3THHz5
+      eyzcmEKvFFkJLdPR1k6hWMHX5iCSyZAvwaEDHZvvAwiikZGRaj2Yzy/+esPobuOHr7zO1dFJ
+      LA4Lrv7jhGevEVyJ0bwwg7e7l+GhASZn5+nsP0A+sY6/s4uk1YhegOHDg9yMXObUM0NMLITp
+      7mnFXrbg7W5B+WSUVpcZydBJ5toCzf5WzEYDZqsTj96CteMAdnsaV0sXkeA8mBx4BDMWvx8B
+      KJcrNBgM6Ew23E4R1SxRLJT4fJSRy+Vo62jn4IFuLl66jr93ALe9Eb+7kXRJoNvjYjEQxmL3
+      QiyDokB/p5/F9RRuXxsWwQJmFYcFRLuN4f5ebJ42Kj43TU2t9Pf48LZ3kc/EseoEXP5mZhYD
+      KO0jtHoaSRUVDh9oxtvkxus0kM1LHDt+lFAkQXtLMxWDDwHo7ukgsBikw2kg7xlkefRjbpkt
+      vP7KNwmsbNDuf3I1SAFeff0t7DYr6UwBqefHOFwu0oFpIjkrTrsdQYBvvfIy69EErwx7ycbX
+      MNk9CJ++/ws1VfY+Uee+Kj5bmpMv/OjOcSgUIhAIbOsq0PzMDUqChYNDfV+7UVw6FiFZ1tHZ
+      8njfXy62SrjQQH/7o88vZTYIRCWGeuotJkphdmqWvuFhQstBurq6tsXqpUuXeOuttxgfH0ev
+      12//KpBSyjATjHNwoJOV5RVUVDo6ttZHttbpHz6yZRt2tx/7Vzjf6m6l/zHOM9q8DNVl0pbI
+      0MEDANt28T9pqlUhQuugyCgqlMtlEHY/xU9DYycQAWKJOGohycrG7qf27RTb1SZ0u3anNTu7
+      gx5VormtG3+zh3A4jKmxEXXzFXMNjT2BHkFPi786KWttbd1ld3aOmf/+OZHLn26DJQG25Qdj
+      b9lpfuYFBn/0023w48lSN+HQ200pHiW3GtxtN/YspcTWdrJ3itoeoGloPGH27R1Aoz4pl8uU
+      SttXra+uBSBVShSKZSzWRnRidTtLkiqIOj3i7dLa2VyORqtW533XUCpMTy/Q09nMxOQM/q5+
+      2pvdqKrCraUFWjr7MOpFgjfncHX0YNukOLPBYMBo3Dyk/nGp6yFQJLhCrlhgbm6efC7L+vo6
+      2UyaUqlEeHWV9ViCaDRKpZgnVygSWg6Sym5fQz6NzZmdGGd2LoCoM3BkZITp8esAlAs5VlZu
+      kSsplHMJrly4wka6uOP+6Tn9f9jV2moFY3C64QuhEA9D1Olp8vqQsxkikVUabF7Ip5AVlYpg
+      pJhOIpWLzC0G6e30k8yVcLhr67PuZYrpdebDaYRKHlUUuXHlEjpLdYvbaLHR4q0WZf7s3Hn8
+      fi/pTBZ8O7sFrk+O1l6lYN1jhiapikw6mSBTVnBYDLjcLtKRFABGo4FCWaDBZMGkVCjKIh5n
+      I6HVCEP9WnW0nUBntHFoqIexKynWV0NUBD2CqjI3NYO/zcONyRlcKT3DR44SnJ6BXei2Wddz
+      AF9bK9l8gf7+PlBlRBHczW0giKgIqLZqvoFeJ1KWZHQoNHm0Sm47RYPRTHd3N52d1biyju57
+      gxm/+w9v33ns/0Ljip2krgXQYDThulPo9fZ0Rv+FSZTu7hTHaNA9Xm6zxr6irifBGhpbRROA
+      Rt2hKjITo5cZm5pHUWRmZ2eRbidul3JpPv3rJyytrJFLxTh77gLFysPrtdb1EGgrdLz6XZyH
+      T2zZjiiKKNswedtrdqz+ti378DCUch7VaGfi2nncjSIffPxXOrr70OtEKpUSVmsjZ8+ew64r
+      M3xogI/OXOWNl595oK19K4Cmg8dwDG09KaZWLrhatfMk0BktRIMzdA8/RVtHLwNd1cy59//0
+      W0ZeeI18MobJbEGWBQaGhpi+ef6htvatADTql2x0mauTAVrbFXyNCjcmpynqHXznzR+wPDdO
+      cD2G0eal2+vgl7/8Dc++9MZDbWkC0Kg7Gr3d/Ow//v3O8c+Gj9553Dl4lLcH7x4ff+7Rtvat
+      AHJnf09+fmzLdgRBRFW3PlSoJzuWZ9/ANPCIlkx1xL4VQGl+jPzl93bbjbrE0DcCe0QA2jKo
+      xr5GE4DGvmbfCECWpYcWrdX46qiKRGg5SCZfRJbKLC+vIN3+flVFYjW0iqyopOIbLC4GKEm1
+      0vnzXupeANnkBnM3FwhFNqhUyqRSSWRFJZdJkysUUVWVVDJJIrpGplCu1j3S2DKlfBYJkXNn
+      z3D5wllUpcjFS9VY/9FL58nmUly6NsH10XHMZvOdBKVao+4FIOp0SJKExWIhsLiAVC6wEt4g
+      k04xOz1LOBSkKMlIksxqMEAqv33pdPsZU6OdRGgJRWfBamhgZnYes63aaShfkRgcPECpmKDJ
+      bWdm8jrridwue/xg6l4AeoOFgYE+witBGkxm3E1OlFKWZL6CQRQpyQp2u50GXXVZT6j/j1wT
+      pKIbWNwtCHKZRLZEV1cX6dQGS4sBbGYjY+OjWBubMDRYsFtNFGv0zlv3y6CCoBIOhWht76RB
+      B4gGfM0tZFIxBIcdt9tBOBTG4XIx4Gkhn90/1e+eJDaXm4oq0vHCKQx6gXgiRf/AMOVSie7u
+      DhLJFE6XC7lcJFtsx+mozWKndS+ABoOZzvsKsVqtZqzWuwkWHZ13C/0anDvUlWaPI+r0eLx3
+      U/e83mr5c7O5mp/R1FRNd9SbrTQYazOmCPbAEEhDYytoAtDY19T9EOjrYhw+iWLcer/Zeorh
+      2S47Dc3dW7ZfK+xbAViffQPTyW9v2U6txd/Xmp1aRxsCaexrNAFo1B1ypciZjz/g8tg0ilxh
+      bGycyheaOUdXA0zM3SITj/DBh6fJl6SH2tq3Q6CGD/4T/czHWzdUG+X4t8WOarZT/pdfb4MT
+      TxZVUXC6PVwfH6XDY+H85SsMDB+sbnbKZc5dPk9F8jCvxHnqxGE+OnOFN1999oG29q0AKOcR
+      iqnd9qK2qM1wnS+hCiKdXd1MT05j87bT01rdj3j/T78F0UgkmiUUWedIv58mtwt55uG9Cvav
+      ADTqlko+w0fvf4yrrZdYcIbIRpyPPz3PG2/+4LaGS4yPBfA5Bd597zNeeU3LCdbYQ1icXr7/
+      jz+8c/zP/YfuO8PI0ZEhAH7YNfhIW3tmEqzIFbK5AgDZTPrBsf9KhXRGK4++GYH5aS5cuEgm
+      V2Ds6iWujk2hqKCqClNj17gxs4Ailbh68TzLkfpohfQw9owACukEU3OLqKrM2OgV8iWJ5WCA
+      RDpLKhElcGsZSS4TT2Z329Wap62rjy5fI4sraxw8eoziRpCcBPl4iKLoRE4EuXL5Mr6BERZn
+      b+y2u1tizwgABOzmBtbW1rC7vCTWV8iUVG4FAsiyTCEVJZYu7LaTdUEhFWcuEMZsNhEKzJOT
+      BVBkzM5mKpkwobUN0ukyjVYzOrG+s+z2kADA5XYTCIZpclgwmq0olTJuj4doNIbRaEBV6/uf
+      tTMoBIMrGAxG5FKO8EaSBoOB1NoykUQBg7EBW3MPf3PyIFfPnsZoa95th7fEnpkEW5xuzAh4
+      mpwIQjWWpcnpQNDpEXweFFXdtu7wexuRw8efvhsKMdB3z6utnrs1Nl952b/Tzm07e0YAgiBW
+      l8C+cJE3GO42U9MufY0HsaeGQBoaXxVNABr7mj0zBPqqyCffRh54act2RJ2IIm9D+HEt2NE9
+      ukfvXmTfCkDxDaK4+zY/cTO2K26+1uzsE7QhkMa+RhOAxr5m3w6BjMG/QGxyy3YEQdiWDbZa
+      sFNufQnJ89SWfagn9q0AdNkgYnx8t92oKST3yG67sONoQyCNfc2+vQNo1DGVPP/zq/+i86lv
+      02XY4H8/meCpEyc4dfIoiUiAdz88h2qw0efRM724wsjzr3FiqOOBpv4fQ+0g1vLEdB0AAAAA
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Impact of distance on avg.delivery time(mins) by vehicle type' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Impact of traffic level on avg. delivery time(mins)' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Impact of weather on avg. delivery time(mins)' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='KPI' width='192'>
+      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
+      lP1KWKOHMwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='average delivery time by delivery person id' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
