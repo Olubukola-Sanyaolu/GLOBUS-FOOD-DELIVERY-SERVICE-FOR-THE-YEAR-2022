@@ -18,7 +18,7 @@ The food delivery industry faces multiple challenges, including fluctuating deli
 <img width="788" alt="food delivery dashboard" src="https://github.com/user-attachments/assets/3a20f91e-abe7-40bf-9678-3c35d6907aec" />
 
 # METHODOLOGY
---
+---
 Excel (Data cleaning), Tableau (Data visualization
 
 # DATA SOURCE
