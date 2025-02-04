@@ -102,13 +102,21 @@ The data used for the analysis was sourced from kaggle
 ### Top average delivery time by delivery perrsonel id
 
 -CHENRES14DEL02 : 44.09mins
+
 -CHENRES01DEL02 : 36.55mins
+
 -JAPRES12DEL02 : 36.09mins
+
 -COIMBRES12DEL02: 35.74mins
+
 -COIMBRESO3DEL02: 35.38mins
+
 -SURRESI6DEL01 : 33.04mins
+
 -COIMBRES06DEL01 :31.25mins 
+
 -RANCHIRES18DEL01 : 29.38mins
+
 
 # RECOMMENDATION
 ---
